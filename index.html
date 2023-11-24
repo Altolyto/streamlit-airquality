@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deployment Model</title>
+</head>
+<body>
+    <h1>Kualitas Udara</h1>
+    <form method="post">
+        <label for="PM10">PM10:</label>
+        <input type="range" id="PM10" name="PM10" min="0" max="100" value="50" step="1">
+        <br>
+        <label for="CO">CO:</label>
+        <input type="range" id="CO" name="CO" min="0" max="10" value="5" step="0.1">
+        <br>
+        <label for="O3">O3:</label>
+        <input type="range" id="O3" name="O3" min="0" max="200" value="100" step="1">
+        <br>
+        <label for="SO2">SO2:</label>
+        <input type="range" id="SO2" name="SO2" min="0" max="30" value="15" step="0.1">
+        <br>
+        <button type="submit">Hitung Kategori Udara</button>
+    </form>
+    <br>
+    <h2>Hasil Kategori Udara:</h2>
+    <p>{{ kategori }}</p>
+</body>
+</html>
